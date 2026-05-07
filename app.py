@@ -164,5 +164,6 @@ st.pyplot(fig)
 st.dataframe(
     year_data[["Maakond", "Mehed Loomulik iive", "Naised Loomulik iive", "Loomulik iive"]]
     .sort_values("Loomulik iive", ascending=False)
-    .reset_index(drop=True)
+    .reset_index(drop=True),
+    hide_index=True
 )
